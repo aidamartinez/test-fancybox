@@ -3,6 +3,7 @@ import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 
 Fancybox.bind("[data-fancybox]", {});
+
 Fancybox.bind("[data-fancybox='gallery-a']", {
 	Thumbs: {
 		type: "classic",
@@ -41,3 +42,15 @@ Fancybox.bind("[data-fancybox='gallery-protected']", {
 	},
 });
   
+Fancybox.bind("[data-fancybox='custom-close-button']", {
+	closeButton: false,
+	on: {
+		reveal: (fancybox, slide) => {
+			const closeButton = slide.el.querySelector("[data-name='popup-close']");
+
+			closeButton.addEventListener("click", () => {
+				fancybox.close();
+			});
+		},
+	},
+});

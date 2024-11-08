@@ -191,6 +191,29 @@
 
 		<section class="container mx-auto mb-16">
 			<div class="w-7/12 mx-auto">
+				<h2 class="section-title">Popup - Inline Content </br> (no close button, custom close button)</h2>
+
+				<button
+					data-fancybox="custom-close-button" data-src="#dialog-content-no-close-button"
+					class="button button-block">
+					Launch Dialog
+				</button>
+
+				<div id="dialog-content-no-close-button" style="display:none;max-width:500px;">
+					<h2 class="text-2xl">Hello!</h2>
+					<div class="prose">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A perferendis pariatur tenetur dolorum error harum, alias beatae facere delectus suscipit?</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nam suscipit dignissimos.</p>
+						
+						<button class="button mt-5" data-name="popup-close">Close popup</button>
+					</div>
+				</div>
+				<div class="mt-3 text-center">The same way we created a custom button to close the popup, we could create custom arrows.</div>			  
+			</div>
+		</section>
+
+		<section class="container mx-auto mb-16">
+			<div class="w-7/12 mx-auto">
 				<h2 class="section-title">Popup - Inline Content with <strong>Hash</strong></h2>
 
 				<button
