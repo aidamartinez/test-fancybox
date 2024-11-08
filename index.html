@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App - Testing FancyBox</title>
+  </head>
+  <body>
+    <div id="app" class="mt-20 mb-32">
+		<h1 class="text-5xl text-center mb-14">Testing <a href="https://fancyapps.com/fancybox/" target="_blank">FancyBox</a></h1>
+
+		<section class="container mx-auto mb-16">
+			<div class="w-7/12 mx-auto">
+				<h2 class="section-title">Single image</h2>
+				<a data-fancybox data-caption="Single image" href="https://images.unsplash.com/photo-1448906654166-444d494666b3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+					<img src="https://images.unsplash.com/photo-1448906654166-444d494666b3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+				</a>
+			</div>
+		</section>
+
+		<section class="container mx-auto mb-16">
+			<div class="w-7/12 mx-auto">
+				<h2 class="section-title">Image gallery</h2>
+
+				<div class="grid grid-cols-4 gap-2">
+					<a data-fancybox="gallery" data-caption="Caption #1" href="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+						<img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+					</a>
+
+					<a data-fancybox="gallery" data-caption="Caption #2" href="https://images.unsplash.com/photo-1470608756445-2c9906b0680f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+						<img src="https://images.unsplash.com/photo-1470608756445-2c9906b0680f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+					</a>
+
+					<a data-fancybox="gallery" data-caption="Caption #3" href="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+						<img src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+					</a>
+
+					<a data-fancybox="gallery" data-caption="Caption #4" href="https://images.unsplash.com/photo-1515165562839-978bbcf18277?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+						<img src="https://images.unsplash.com/photo-1515165562839-978bbcf18277?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="container mx-auto mb-16">
+			<div class="w-7/12 mx-auto">
+				<h2 class="section-title">Multiple Image gallery (but independent)</h2>
+
+				<div class="space-y-2">
+					<div class="grid grid-cols-2 gap-2">
+						<!-- First gallery -->
+						<a data-fancybox="gallery-a" data-caption="Gallery A #1" href="https://plus.unsplash.com/premium_photo-1661926062886-d4b7cb176eb6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+							<img src="https://plus.unsplash.com/premium_photo-1661926062886-d4b7cb176eb6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+						</a>
+						
+						
+						<a data-fancybox="gallery-a" data-caption="Gallery A #2" href="https://images.unsplash.com/photo-1656925313369-50be11287aae?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+							<img src="https://images.unsplash.com/photo-1656925313369-50be11287aae?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+						</a>
+					</div>
+					<caption>Classic thumb</caption>
+					<div class="grid grid-cols-2 gap-2">
+						<!-- Second gallery -->
+						<a data-fancybox="gallery-b" data-caption="Gallery B #1" href="https://images.unsplash.com/photo-1633101170395-ba7a0d443f82?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+							<img src="https://images.unsplash.com/photo-1633101170395-ba7a0d443f82?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+						</a>
+						
+						<a data-fancybox="gallery-b" data-caption="Gallery B #2" href="https://images.unsplash.com/photo-1582144103657-3bdee8c9a3aa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+							<img src="https://images.unsplash.com/photo-1582144103657-3bdee8c9a3aa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+						</a>
+					</div>
+					<caption>Modern thumb</caption>
+					<div class="grid grid-cols-2 gap-2">
+						<!-- Second gallery -->
+						<a data-fancybox="gallery-c" data-caption="Gallery C #1" href="https://images.unsplash.com/photo-1656925313408-6416cc617f75?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+							<img src="https://images.unsplash.com/photo-1656925313408-6416cc617f75?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+						</a>
+						
+						<a data-fancybox="gallery-c" data-caption="Gallery C #2" href="https://images.unsplash.com/photo-1656925341785-89fdf6aaf62c?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+							<img src="https://images.unsplash.com/photo-1656925341785-89fdf6aaf62c?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+						</a>
+					</div>
+					<caption>No thumb</caption>
+				</div>
+			</div>
+		</section>
+
+		<section class="container mx-auto mb-16">
+			<div class="w-7/12 mx-auto">
+				<h2 class="section-title">Image gallery (less options when open)</h2>
+
+				<div class="grid grid-cols-4 gap-2">
+					<a data-fancybox="gallery-less-options" href="https://images.unsplash.com/photo-1724182176573-9424bd398fc2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+						<img src="https://images.unsplash.com/photo-1724182176573-9424bd398fc2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+					</a>
+
+					<a data-fancybox="gallery-less-options" href="https://images.unsplash.com/photo-1724494442916-43f4c723c0c1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+						<img src="https://images.unsplash.com/photo-1724494442916-43f4c723c0c1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+					</a>
+
+					<a data-fancybox="gallery-less-options" href="https://images.unsplash.com/photo-1606850905897-a4412baf8a62?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+						<img src="https://images.unsplash.com/photo-1606850905897-a4412baf8a62?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+					</a>
+
+					<a data-fancybox="gallery-less-options" href="https://images.unsplash.com/photo-1684097424567-d6cc03cc5dbe?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+						<img src="https://images.unsplash.com/photo-1684097424567-d6cc03cc5dbe?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="container mx-auto mb-16">
+			<div class="w-7/12 mx-auto">
+				<h2 class="section-title">Image gallery (protected)</h2>
+
+				<div class="grid grid-cols-4 gap-2">
+					<a data-fancybox="gallery-protected" href="https://images.unsplash.com/photo-1633101170415-639519241e5f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+						<img src="https://images.unsplash.com/photo-1633101170415-639519241e5f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+					</a>
+
+					<a data-fancybox="gallery-protected" href="https://images.unsplash.com/photo-1574756074371-1595df8708c6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+						<img src="https://images.unsplash.com/photo-1574756074371-1595df8708c6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+					</a>
+
+					<a data-fancybox="gallery-protected" href="https://images.unsplash.com/photo-1598429337123-dd9d75202086?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+						<img src="https://images.unsplash.com/photo-1598429337123-dd9d75202086?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+					</a>
+
+					<a data-fancybox="gallery-protected" href="https://images.unsplash.com/photo-1724494454878-a810da4caf9b?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+						<img src="https://images.unsplash.com/photo-1724494454878-a810da4caf9b?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+					</a>
+				</div>
+				<caption>No right click when open and copyright watermark</caption>
+			</div>
+		</section>
+
+		<section class="container mx-auto mb-16">
+			<div class="w-7/12 mx-auto">
+				<h2 class="section-title">Image gallery with <strong>hash link</strong></h2>
+
+				<div class="grid grid-cols-3 gap-2">
+					<a
+						href="https://images.unsplash.com/photo-1511971532930-9d589f9e3a82?q=80&w=2068&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						data-fancybox="gallery-with-hash"
+						data-slug="green-bonsai-plant"
+						>
+						<img src="https://images.unsplash.com/photo-1511971532930-9d589f9e3a82?q=80&w=2068&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+					</a>
+
+					<a
+						href="https://images.unsplash.com/photo-1729111146336-f1c5cbf6122a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						data-fancybox="gallery-with-hash"
+						data-slug="bonsai-tree-table"
+						>
+						<img src="https://images.unsplash.com/photo-1729111146336-f1c5cbf6122a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+					</a>
+
+					<a
+						href="https://images.unsplash.com/photo-1677897466032-e97c3c5a9eb6?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						data-fancybox="gallery-with-hash"
+						data-slug="bonsai-tree-table-room"
+						>
+						<img src="https://images.unsplash.com/photo-1677897466032-e97c3c5a9eb6?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+					</a>
+
+				</div>
+				<caption>Each image has a direct link that will open the image on load.</caption>
+			</div>
+		</section>
+
+		<section class="container mx-auto mb-16">
+			<div class="w-7/12 mx-auto">
+				<h2 class="section-title">Popup - Inline Content</h2>
+
+				<button
+					data-fancybox data-src="#dialog-content"
+					class="button button-block">
+					Launch Dialog
+				</button>
+
+				<div id="dialog-content" style="display:none;max-width:500px;">
+					<h2 class="text-2xl">Hello, world!</h2>
+					<div class="prose">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A perferendis pariatur tenetur dolorum error harum, alias beatae facere delectus suscipit?</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nam suscipit dignissimos.</p>
+					</div>
+				</div>				  
+			</div>
+		</section>
+
+		<section class="container mx-auto mb-16">
+			<div class="w-7/12 mx-auto">
+				<h2 class="section-title">Popup - Inline Content with <strong>Hash</strong></h2>
+
+				<button
+					data-fancybox data-src="#dialog-content"
+					data-slug="dialog-content"
+					class="button button-block">
+					Launch Dialog
+				</button>
+
+				<div id="dialog-content" style="display:none;max-width:500px;">
+					<h2 class="text-2xl">Hello, world!</h2>
+					<div class="prose">
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex pariatur cum quaerat sapiente ipsa corporis modi cupiditate rem cumque, placeat mollitia sint quam? Repellat corrupti, commodi facilis aliquam nostrum voluptatem.</p>
+					</div>
+				</div>				  
+			</div>
+		</section>
+
+		<section class="container mx-auto mb-16">
+			<div class="w-7/12 mx-auto">
+				<h2 class="section-title">Popup - Inline Content <strong>Gallery</strong></h2>
+
+				<div class="flex justify-center w-fit mx-auto gap-2">
+					<button
+						data-fancybox="inline-popup-gallery" data-src="#dialog-content-1"
+						class="button button-block">
+						Popup #1
+					</button>
+					<button
+						data-fancybox="inline-popup-gallery" data-src="#dialog-content-2"
+						class="button button-block">
+						Popup #2
+					</button>
+					<button
+						data-fancybox="inline-popup-gallery" data-src="#dialog-content-3"
+						class="button button-block">
+						Popup #3
+					</button>
+				</div>
+				
+
+				<div id="dialog-content-1" style="display:none;max-width:500px;">
+					<h2 class="text-2xl">Popup #1</h2>
+					<div class="prose">
+						<p>Lorem ipsum dolor sit.</p>
+						<p>Amet consectetur adipisicing elit. Aperiam!</p>
+					</div>
+				</div>				  
+				<div id="dialog-content-2" style="display:none;max-width:500px;">
+					<h2 class="text-2xl">Popup #2</h2>
+					<div class="prose">
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, est.</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam!</p>
+					</div>
+				</div>				  
+				<div id="dialog-content-3" style="display:none;max-width:500px;">
+					<h2 class="text-2xl">Popup #3</h2>
+					<div class="prose">
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, est.</p>
+					</div>
+				</div>				  
+			</div>
+		</section>
+
+		<section class="container mx-auto mb-16">
+			<div class="w-7/12 mx-auto">
+				<h2 class="section-title">Popup - Video and audio</h2>
+
+				<div class="space-y-3">
+					<a href="https://videos.pexels.com/video-files/3214448/3214448-uhd_2560_1440_25fps.mp4" data-fancybox data-width="900" data-height="500" class="button button-block">
+						MP4 video
+					</a>
+					
+					<a
+						href="https://cdn.freesound.org/previews/765/765858_5828667-lq.mp3"
+						data-fancybox
+						data-type="html5video"
+						data-thumb="https://images.unsplash.com/photo-1504904126298-3fde501c9b31?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+						class="button button-block"
+					>
+						MP3 fil
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="container mx-auto mb-16">
+			<div class="w-7/12 mx-auto">
+				<h2 class="section-title">Popup - Videos (YouTube and Vimeo)</h2>
+
+				<div class="grid grid-cols-3 gap-2">
+					<a href="https://www.youtube.com/watch?v=C0DPdy98e4c" data-fancybox="video-gallery"><img alt="" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></a>
+					<a href="https://vimeo.com/912441665" data-fancybox="video-gallery"><img alt="" src="https://images.unsplash.com/photo-1471922694854-ff1b63b20054?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></a>
+					<a href="https://www.youtube.com/watch?v=WO2b03Zdu4Q" data-fancybox="video-gallery"><img alt="" src="https://images.unsplash.com/photo-1439405326854-014607f694d7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></a>
+				</div>
+			</div>
+		</section>
+
+		<section class="container mx-auto mb-16">
+			<div class="w-7/12 mx-auto">
+				<h2 class="section-title">Popup - Google Maps</h2>
+
+				<a
+					href="https://www.google.com/maps/search/?api=1&query=Westminster+Bridge%2C+London&query_place_id=ChIJoaH8k8YEdkgRnmDd5iuUl9Y"
+					data-fancybox
+					class="button button-block"
+				>
+					Launch Map
+				</a>
+
+			</div>
+		</section>
+	</div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
